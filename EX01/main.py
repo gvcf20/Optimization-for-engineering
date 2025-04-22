@@ -6,6 +6,8 @@ import math
 ## x^2 + (xz)^3 = e^-y
 ## yz - x^2 = -e^(xyz)
 
+## Chatgpt was used for generating commentary across the code
+
 def get_residuals(guess, AE):
     """Compute the residuals of the system for a given guess."""
     residuals = np.array([f(*guess) for f in AE])
