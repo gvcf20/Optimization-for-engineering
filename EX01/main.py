@@ -44,8 +44,11 @@ def main(iter_limit=100, tol=1e-6, initial_guess=[1, 1, 1], AE=np.array([
 
     solution = guess
 
-    print(f'Solution found in {num_iter} iterations\n')
-    print(f'Solution = {solution}')
+    if num_iter > iter_limit:
+        print('Limit number of iterations reached')
+    else:    
+        print(f'Solution found in {num_iter} iterations\n')
+        print(f'Solution = {solution}')
 
     return solution
 
