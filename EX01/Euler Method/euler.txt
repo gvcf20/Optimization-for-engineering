@@ -1,0 +1,23 @@
+Task 2
+
+a)
+From the plot, we can conclude that this method becomes smoother with the reduction
+of the step size. On the other hand, we observe that the smaller the step size,
+the more steps are required for convergence. We can also conclude that the solution
+of the ODE converges to y = 2.
+
+b)
+The implicit method is much more stable than the explicit method. 
+For the 0.4 step size, we clearly see a much more stable convergence, 
+without divergent values during the solution. As in (a), we observe that the 
+smaller the step size, the more steps are required to reach convergence. 
+This method also requires the use of an external solver to solve a linear equation 
+within each iteration, which improves accuracy but also increases the computational 
+effort needed.
+
+c)
+Using solve_ivp in Python, we obtain a plot very similar to the one obtained using 
+the implicit Euler method. Using the BDF method, we reach an answer in 31 steps, 
+while with RK45 it takes 65 steps to reach convergence, since this method oscillates 
+significantly around the desired solution.
+
