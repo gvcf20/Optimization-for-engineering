@@ -17,6 +17,7 @@ def f(t,guess):
     rate3 = p.k30 * np.exp(-p.Ea3 / (p.R * p.T))
     factor = p.A0 / p.q
 
+
     dCa = factor * (-rate1 * Ca**p.n1)
     dCb = factor * (rate1 * Ca**p.n1 - rate2 * Cb**p.n2 - rate3 * Cb**p.n3)
     dCc = factor * (rate2 * Cb**p.n2)

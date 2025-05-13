@@ -21,7 +21,7 @@ class p:
         self.CcIn = 0 # mol/m^3
         self.CdIn = 0 # mol/m^3
         self.Ea1 = 7.5e4 #J/mol
-        self.Ea2 = 1.2e4 #J/mol
+        self.Ea2 = 1.2e5 #J/mol
         self.Ea3 = 5.5e4 #J/mol
         self.n2 = 1
         self.n3 = 1
