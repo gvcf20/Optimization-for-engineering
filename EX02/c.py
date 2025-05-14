@@ -17,7 +17,7 @@ def solve_ODEs(axial_lenght = 50, plot = True):
 
     x_span = (0, axial_lenght)
 
-    x_eval = np.linspace(*x_span, 1000)
+    x_eval = np.linspace(*x_span, 3000)
 
     sol = solve_ivp(f, x_span, y0, method='RK45', t_eval=x_eval) 
 
@@ -25,9 +25,6 @@ def solve_ODEs(axial_lenght = 50, plot = True):
     y1, y2, y3, y4 = sol.y
 
     gradients = [y1, y2, y3, y4]
-
-    print(y2)
-    print(t)
 
     if plot == True:
         plt.figure(figsize=(10, 6))
@@ -42,8 +39,8 @@ def solve_ODEs(axial_lenght = 50, plot = True):
         plt.grid(True)
         plt.show() 
        
-    return gradients
+    return gradients, t
 
 if __name__ == '__main__':
 
-    grads = solve_ODEs()
+    grads, t = solve_ODEs()
