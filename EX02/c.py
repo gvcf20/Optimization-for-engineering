@@ -31,7 +31,7 @@ def solve_ODEs(axial_lenght=50, plot=True):
 
     # Store the results in a list for convenience
     gradients = [y1, y2, y3, y4]
-    print(gradients[0],gradients[1])
+    
     # Plot the solution if requested
     if plot == True:
         plt.figure(figsize=(10, 6))
