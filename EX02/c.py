@@ -20,7 +20,7 @@ def solve_ODEs(axial_lenght=50, plot=True):
     x_span = (0, axial_lenght)
 
     # Points at which to evaluate the solution
-    x_eval = np.linspace(*x_span, 3000)
+    x_eval = np.linspace(*x_span, 100)
 
     # Solve the ODE system using Runge-Kutta 4(5) method
     sol = solve_ivp(f, x_span, y0, method='RK45', t_eval=x_eval)
@@ -31,7 +31,7 @@ def solve_ODEs(axial_lenght=50, plot=True):
 
     # Store the results in a list for convenience
     gradients = [y1, y2, y3, y4]
-
+    print(gradients[0],gradients[1])
     # Plot the solution if requested
     if plot == True:
         plt.figure(figsize=(10, 6))

@@ -12,7 +12,7 @@ def F(T, CAin = 12, CAout = 0.182, CBout = 0.134, q = 0.12, pB = 7, pA = 2, pT =
 
     revenue = earnings - expenses
 
-    print(earnings,expenses)
+    # print(earnings,expenses)
     print(f'The Revenue for temperature {T}K is: {revenue} euros per second')
     return revenue
 
