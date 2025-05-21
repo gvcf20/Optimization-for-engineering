@@ -3,26 +3,27 @@ import numpy as np
 
 from b import F
 
+def equidistance_search(Ti, Tf, num_intervals = 25, plot = True):
 
-def equidistance_search(h = 3.2):
+    T_values = np.linspace(Ti, Tf, num_intervals + 1)
+    F_values = [-F(T) for T in T_values]
 
-    interval = list(np.arange(300,380+h,h))
-    revenues = []
-    for T in interval:
-        revenues.append(F(T))
+    if plot == True:
 
-    plt.figure(figsize=(12,10))
-    plt.scatter(interval,revenues,label = 'Revenue')
-    plt.xlabel('Temperature')       # x-axis label (axial length of the reactor)
-    plt.ylabel('Revenue')  # y-axis label
-    plt.title('Equidistant Search')  # Plot title
-    plt.legend()                 # Show legend
-    plt.grid(True)              # Show grid
-    plt.show()
-    return 
+        plt.figure(figsize=(10, 5))
+        plt.plot(T_values, F_values, marker='o')
+        plt.title("Objective Function F(T) over Temperature")
+        plt.xlabel("Temperature (K)")
+        plt.ylabel("Objective Function F(T) [€/s]")
+        plt.grid(True)
+        plt.tight_layout()
+        plt.show()
+
+
+    return F_values 
 
 
 if __name__ == '__main__':
 
-    a = equidistance_search()
-    print(a)
+    a = equidistance_search(Ti=300, Tf=380)
+    
