@@ -1,0 +1,24 @@
+What advantages does this approach offer compared to 
+the approach of Task 1?
+
+The linear approach offers faster computation, guaranteed 
+global optimality, and simpler implementation compared to the 
+nonlinear method used in Task 1. It avoids iterative solving, 
+making it more stable and easier to analyze statistically. 
+However, this comes at the cost of potentially less accurate 
+parameter estimation, since linearization can distort the original 
+model’s error structure.
+
+#####################################################################
+
+How  can  you  explain  the deviations compared to the results
+of Task 1?
+
+The deviations compared to Task 1 arise because the linear approach 
+is based on a logarithmic transformation of the original model, which 
+changes the nature of the error — it minimizes errors in ln(G) 
+rather than in G itself. This transformation can distort the 
+influence of data points, especially when G spans several orders of 
+magnitude, leading to different parameter estimates and a poorer fit 
+in the original space.
+

@@ -1,10 +1,9 @@
 from scipy.optimize import least_squares
 import numpy as np
-import numpy as np
 
-
-### Chatgpt was used with the following prompt: 
+### Chatgpt was used with the following prompts: 
 # Transform this table in numpy vector, with the table image also prompted
+## Correct grammar in my comments and make them better
 
 class Data:
 
@@ -50,6 +49,8 @@ if __name__ == '__main__':
     data = Data()
     initial_guess = [1, 1, 1]  # Initial guesses for k0, EA (J/mol), and n
     result = least_squares(residuals, initial_guess, args=(data,))
+
+    print(result)
 
     print("Fitted parameters:")
     print(f"k0 = {result.x[0]:.4e}")
