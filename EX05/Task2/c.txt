@@ -1,0 +1,7 @@
+c) Although, in this task, only two unknown parameters need to be determined, the 
+computation time required to solve this task is significantly greater than that of 
+Task 1. How can this be explained? 
+
+Solving this task involved solving a diferential equation. So even though it has less
+parameters to fit, the step od solving the diferential equation at each step highly
+increases computational complexity.
