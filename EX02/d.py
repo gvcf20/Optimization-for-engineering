@@ -1,6 +1,6 @@
 from a import p as parameters     
 from b import f                  
-from c import solve_ODEs           
+from EX06.c import solve_ODEs           
 
 ## Chatgpt was used for generating commentary across the code with the following prompt:
 ## Correct grammar in my comments and make them better

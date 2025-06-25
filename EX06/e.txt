@@ -1,0 +1,29 @@
+e)  Compare  the  methods  of  tasks  c)  and  d)  regarding  accuracy,  
+efficiency  and  applicability. 
+Discuss your optimized packaging dimensions critically.
+
+I) Accuracy
+Solving the constrained problem we get a much more accurate
+solution, since the constrains forbiden the result to be out
+of bounds. On the other hand, when using penalty functions,
+violations of the constrains are not forbiden but penalized.
+Also, when using penalty functions, the problem becomes
+dependent on the penalty parameters, that when bigger improve
+accuracy but can cause ill-conditioning problems if are over
+dimensionated.
+
+II) Efficiency
+
+When using the constrained problem, we solve a smaller and 
+better conditionade problem and the solver for it self uses
+deticated algorithms. On the other hand, although we used 
+the same solver for the unconstrained problem, we need to 
+tune the penalty parameters for a more accurate solution, 
+which can take a lot of time, reducing efficiency.
+
+III) Applicability
+
+The constrained method are very useful for problems that 
+require a lot of accuracy, but we are dependent of solvers
+that can handle constrains. The penalty method is very usefull
+when the solver does not support the constrains we need.

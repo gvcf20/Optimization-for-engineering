@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from c import equidistance_search
+from EX06.c import equidistance_search
 
 ## Chatgpt was used for generating commentary across the code with the following prompt:
 ## Correct grammar in my comments and make them better
