@@ -3,7 +3,7 @@ from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt        
 
 from a import p as parameters          
-from b import f               
+from EX07.b import f               
 
 ## Chatgpt was used for generating commentary across the code with the following prompt:
 ## Correct grammar in my comments and make them better

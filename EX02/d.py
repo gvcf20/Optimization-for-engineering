@@ -1,5 +1,5 @@
 from a import p as parameters     
-from b import f                  
+from EX07.b import f                  
 from EX06.c import solve_ODEs           
 
 ## Chatgpt was used for generating commentary across the code with the following prompt:

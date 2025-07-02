@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from b import F
+from EX07.b import F
 
 ## Chatgpt was used for generating commentary across the code with the following prompt:
 ## Correct grammar in my comments and make them better
