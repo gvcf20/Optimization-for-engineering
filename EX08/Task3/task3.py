@@ -30,7 +30,7 @@ res   = Int(x0=Ca0)
 x_sol = res['xf'].full().flatten() 
 print(f"Concentration of A after 10 minutes reaction: {x_sol[-1]}")
 
-#6. Plot
+#6. Plot done by chatgpt after I prompted the code above
 
 plt.figure(figsize=(8, 5))
 plt.plot(grid, x_sol, marker='o', linestyle='-', color='blue', label='C_A(t)')
