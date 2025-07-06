@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 
 from ex02 import parameters, f, solve_ODEs
+
+## Chatgpt was used for generating commentary across the code with the following prompt:
+## Correct grammar in my comments and make them better
+
 '''
 c) Furthermore, solve the optimization problem using the MATLAB solver fmincon 
 / the Python solver scipy.optimize.minimize for constrained optimization 
